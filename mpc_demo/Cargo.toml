@@ -1,0 +1,24 @@
+[package]
+name = "svarog_demos"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "demo_keygen"
+path = "src/demo_keygen.rs"
+
+[[bin]]
+name = "demo_sign"
+path = "src/demo_sign.rs"
+
+[dependencies]
+clap = { version = "4.3", features = ["derive"] }
+hex = "*"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[dependencies.mpc_algo_sdk]
+path = "../mpc_algo_sdk"
+
+[dependencies.mpc_sesman]
+path = "../mpc_sesman"

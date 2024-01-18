@@ -1,0 +1,13 @@
+[workspace]
+resolver = "2"
+
+members = [
+    "mpc_algo_sdk",
+    "mpc_sesman",
+    "mpc_demo",
+]
+
+[profile.release]
+opt-level = 2
+strip = true
+lto = true
